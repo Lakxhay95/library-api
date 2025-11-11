@@ -1,5 +1,7 @@
 <?php
 
+// Controller = bridge between routes and services
+
 namespace App\Http\Controllers;
 
 use App\Models\Book;
