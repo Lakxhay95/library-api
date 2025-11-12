@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\Models\Member;
 
 class MemberSeeder extends Seeder
 {
@@ -13,7 +14,7 @@ class MemberSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('members')->insert([
+        $members = [
             ['name'=>'Amit Singhal', 'email'=>'amit@example.com', 'phone'=>'9876543210', 'membership_number' => 'MEM001', 'status' => 'active', 'joined_date' => '2024-01-15'],
             ['name' => 'Neha Gupta', 'email' => 'neha@example.com', 'phone' => '9876543211', 'membership_number' => 'MEM002', 'status' => 'suspended', 'joined_date' => '2024-02-10'],
             ['name' => 'Rahul Mehta', 'email' => 'rahul@example.com', 'phone' => '9876543212', 'membership_number' => 'MEM003', 'status' => 'active', 'joined_date' => '2024-03-05'],
@@ -24,6 +25,10 @@ class MemberSeeder extends Seeder
             ['name' => 'Priya Das', 'email' => 'priya@example.com', 'phone' => '9876543217', 'membership_number' => 'MEM008', 'status' => 'suspended', 'joined_date' => '2024-08-08'],
             ['name' => 'Kunal Tiwari', 'email' => 'kunal@example.com', 'phone' => '9876543218', 'membership_number' => 'MEM009', 'status' => 'active', 'joined_date' => '2024-09-01'],
             ['name' => 'Anjali Yadav', 'email' => 'anjali@example.com', 'phone' => '9876543219', 'membership_number' => 'MEM010', 'status' => 'active', 'joined_date' => '2024-09-15'],
-        ]);
+        ];
+
+        foreach($members as $member) {
+            Member::create($member);
+        }
     }
 }

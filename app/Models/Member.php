@@ -13,7 +13,8 @@ class Member extends Model
         'name',
         'email',
         'phone',
-        'membership_date',
+        'membership_number',
         'status',
+        'joined_date',
     ];
 }

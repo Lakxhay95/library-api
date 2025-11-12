@@ -207,7 +207,7 @@ Borrowing::count(); # Should return 5+
 | Method | Endpoint | Description | Status Code |
 |--------|----------|-------------|-------------|
 | POST | /members/create | Register new member | 201 |
-| POST | /members/list | List all members | 200 |
+| GET | /members/list | List all members | 200 |
 | GET | /members/{id} | Get member details | 200 |
 | PUT | /members/update/{id} | Update member | 200 |
 | DELETE | /members/delete/{id} | Delete member | 200 |

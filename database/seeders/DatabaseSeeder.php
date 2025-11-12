@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
         BookSeeder::class,
-        // MemberSeeder::class,
+        MemberSeeder::class,
         // BorrowingSeeder::class,
         ]);
 
