@@ -267,7 +267,7 @@ public function book() {
 |--------|----------|-------------|-------------|
 | POST | /borrowings/borrow | Borrow a book | 201 |
 | POST | /borrowings/return | Return a book | 200 |
-| POST | /borrowings/list | List all borrowings | 200 |
+| GET | /borrowings/list | List all borrowings | 200 |
 | GET | /borrowings/{id} | Get borrowing details | 200 |
 | POST | /borrowings/overdue | List overdue borrowings | 200 |
 

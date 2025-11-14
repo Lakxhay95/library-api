@@ -12,8 +12,21 @@ class Borrowing extends Model
     protected $fillable = [
         'book_id',
         'member_id',
-        'borrow_date',
-        'return_date',
+        'borrowed_date',
+        'due_date',
+        'returned_date',
         'status',
+        'late_fee'
     ];
+
+    // relations (optional, helpful)
+    public function book()
+    {
+        return $this->belongsTo(Book::class);
+    }
+
+    public function member()
+    {
+        return $this->belongsTo(Member::class);
+    }
 }
