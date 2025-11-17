@@ -8,6 +8,12 @@ use App\Services\Books\ValidationRulesService;
 
 class BookController extends Controller
 {
+
+    public function index()
+    {
+        return view('books.index');
+    }
+
     protected $businessLogic;
 
     public function __construct(BusinessLogicService $businessLogic)

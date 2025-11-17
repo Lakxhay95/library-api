@@ -22,9 +22,9 @@ class ValidationRulesService
     public static function getUpdateRules($id)
     {
         return [
-            'title' => 'somtimes|string|max:255',
+            'title' => 'sometimes|string|max:255',
             'author' => 'sometimes|string|max:255',
-            'isbn' => 'spmetimes|string|unique:books,isbn,' .$id,
+            'isbn' => 'sometimes|string|unique:books,isbn,' .$id,
             'category' => 'sometimes|string',
             'total_copies' => 'sometimes|integer|min:1',
             'available_copies' => 'sometimes|string|min:0',
