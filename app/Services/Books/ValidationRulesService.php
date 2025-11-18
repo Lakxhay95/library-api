@@ -28,7 +28,7 @@ class ValidationRulesService
             'category' => 'sometimes|string',
             'total_copies' => 'sometimes|integer|min:1',
             'available_copies' => 'sometimes|string|min:0',
-            'status' => 'sometimes|string|in:available, unavailable',  
+            'status' => 'sometimes|string|in:available,unavailable',  
         ];
     }
 }

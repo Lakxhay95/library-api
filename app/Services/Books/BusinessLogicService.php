@@ -24,6 +24,7 @@ class BusinessLogicService
 
     public function updateBook($id, array $validated)
     {
+        \Log::info('Entered into updateBook logic for ID: ' . $id);
         $book = Book::find($id);
 
         if (!$book) {
