@@ -1,5 +1,6 @@
 <?php
-
+// this is file is not needede in laravel 11 or +.
+// the commands are moved to routes/console.php.
 namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
